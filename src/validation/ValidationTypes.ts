@@ -134,7 +134,7 @@ export class ValidationTypes {
             case this.IS_EMPTY:
                 return eachPrefix + "$property must be empty";
             case this.IS_NOT_EMPTY:
-                return eachPrefix + "$property should not be empty";
+                return eachPrefix + "$property 不能为空";
             case this.IS_IN:
                 return eachPrefix + "$property must be one of the following values: $constraint1";
             case this.IS_NOT_IN:
@@ -284,7 +284,7 @@ export class ValidationTypes {
                 return eachPrefix + "$property must be a valid representation of military time in the format HH:MM";
             case this.IS_HASH:
                 return eachPrefix + "$property must be a hash of type $constraint1";
-                
+
             /* array checkers */
             case this.ARRAY_CONTAINS:
                 return eachPrefix + "$property must contain $constraint1 values";
